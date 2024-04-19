@@ -1,4 +1,4 @@
-#4CAST - React Weather App
+# 4CAST - React Weather App
 
 # Getting Started with Create React App
 
