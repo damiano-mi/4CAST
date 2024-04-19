@@ -1,0 +1,88 @@
+/* Search bar style */
+
+.searchBar {
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    border-radius: 20px;
+    border-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.searchIcon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    color: white;
+    text-align: end;
+}
+
+.searchIcon:hover {
+    color: rgb(0, 0, 94);
+}
+
+.searchResults {
+    background-color: rgb(255, 255, 255, 1);
+    width: 300px;
+    position: absolute;
+    z-index: 999;
+    border-radius: 20px;
+    margin-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.searchResults .dataItem {
+    color: darkblue;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.searchResults p:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.searchResults p {
+    text-decoration: none;
+}
+
+@media (max-width: 473px) {
+    #navbar {
+        align-items: center !important;
+        display: flex;
+
+    }
+}
+
+.searchButton {
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    border: none !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
+    outline: none !important;
+    color: rgb(255, 255, 255) !important;
+    padding-inline: 8px !important;
+    padding-top: 5px !important;
+    padding-bottom: 6px !important;
+    border: none !important;
+}
+
+.searchButton:hover,
+.searchButton:active {
+    background-color: rgb(0, 0, 0, 0.25) !important;
+    border-radius: 10px !important;
+    outline: none !important;
+}

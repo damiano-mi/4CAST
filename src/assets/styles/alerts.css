@@ -1,0 +1,34 @@
+@import "../fonts/font.css";
+
+/* Alerts style */
+
+@media (max-width: 767px) {
+
+    #alerts div,
+    #alerts p {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #alerts #alertsIcon {
+        visibility: collapse;
+    }
+
+    #alertsData {
+        margin: 0 !important;
+    }
+}
+
+#alerts,
+#alertsText {
+    display: contents;
+}
+
+#alertsData {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#alertsLine:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}

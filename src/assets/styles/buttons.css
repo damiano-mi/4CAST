@@ -1,0 +1,56 @@
+/* Buttons style */
+
+/* Temperature selector button */
+
+.tempSelector {
+    border: none;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 1px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: rgb(255, 255, 255);
+}
+
+.tempSelector:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+/* Position button */
+
+.positionButton {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-right: 1px;
+}
+
+.positionButton:hover {
+    color: rgba(8, 0, 114, 0.50);
+}
+
+.buttonShadow{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+}
+
+#smallButtons .tempSelector{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #smallButtons .tempSelector{
+        display:inline;
+    }
+    .tempSelector{
+        display:none;
+    }
+}

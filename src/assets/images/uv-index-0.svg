@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="a" x1="150" x2="234" y1="119.2" y2="264.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="0.5" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <clipPath id="b">
+      <path fill="none" d="M64 64h384v192H328a72 72 0 00-72 72v120H64Z"/>
+    </clipPath>
+    <symbol id="c" viewBox="0 0 384 384">
+      <circle cx="192" cy="192" r="84" fill="url(#a)" stroke="#f8af18" stroke-miterlimit="10" stroke-width="6"/>
+      <path fill="none" stroke="#fbbf24" stroke-linecap="round" stroke-miterlimit="10" stroke-width="24" d="M192 61.7V12m0 360v-49.7m92.2-222.5 35-35M64.8 319.2l35.1-35.1m0-184.4-35-35m254.5 254.5-35.1-35.1M61.7 192H12m360 0h-49.7">
+        <animateTransform additive="sum" attributeName="transform" dur="6s" repeatCount="indefinite" type="rotate" values="0 192 192; 45 192 192"/>
+      </path>
+    </symbol>
+  </defs>
+  <g clip-path="url(#b)">
+    <use width="384" height="384" transform="matrix(1, 0, 0, 1, 64, 64)" xlink:href="#c"/>
+    <path fill="none" stroke="#f8af18" stroke-miterlimit="10" stroke-width="6" d="M254 338v-10a74 74 0 0174-74h10"/>
+  </g>
+  <rect width="144" height="144" x="280" y="280" fill="#91c700" rx="48"/>
+  <path fill="#fff" d="M 373.658 377.668 C 368.191 384.201 360.891 387.468 351.758 387.468 C 342.625 387.468 335.325 384.201 329.858 377.668 C 324.458 371.201 321.758 362.401 321.758 351.268 C 321.758 340.268 324.458 331.568 329.858 325.168 C 335.191 318.701 342.491 315.468 351.758 315.468 C 360.891 315.468 368.191 318.701 373.658 325.168 C 379.125 331.634 381.791 340.334 381.658 351.268 C 381.658 362.334 378.991 371.134 373.658 377.668 Z M 351.758 373.468 C 360.158 373.468 364.358 366.134 364.358 351.468 C 364.358 336.801 360.158 329.468 351.758 329.468 C 343.291 329.468 339.058 336.801 339.058 351.468 C 339.058 366.134 343.291 373.468 351.758 373.468 Z"/>
+</svg>

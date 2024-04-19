@@ -1,0 +1,166 @@
+@import "../fonts/font.css";
+
+/* Forecast/daily and hourly style */
+
+/* Scrollbar for forecast and hourly list */
+
+.card-group.card-group-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.card-group.card-group-scroll>.card {
+    flex-basis: 35%;
+}
+
+#forecast::-webkit-scrollbar,
+#hourly::-webkit-scrollbar {
+    width: 5px;
+    height: 15px;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+#forecast::-webkit-scrollbar-track,
+#hourly::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-width: 0;
+}
+
+#forecast::-webkit-scrollbar-thumb,
+#hourly::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.85);
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+#forecast::-webkit-scrollbar-thumb:hover,
+#hourly::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+/* Collapse button */
+
+#hideButton {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+}
+
+#hideButton:hover {
+    background-color: rgb(0, 0, 0, 0.25) !important;
+    border-radius: 10px;
+}
+
+/* Hour card in hourly list */
+
+@media (max-width: 575px) {
+
+    #hourCard {
+        min-width: 100px !important;
+    }
+
+    #hourly img {
+        max-width: 170px;
+    }
+
+    #hourCard p {
+        margin-inline: 10px !important;
+    }
+}
+
+/* Day card style in forecast list */
+
+#dayCard {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    max-width: 200px !important;
+}
+
+#dayCard:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    outline: 4px solid rgba(255, 255, 255, 0.5);
+    outline-offset: -4px;
+}
+
+#dayCard.clicked {
+    background-color: rgba(0, 0, 0, 0.25);
+    outline: 6px solid rgba(255, 255, 255, 0.5);
+    outline-offset: -4px;
+}
+
+@media (max-width: 575px) {
+
+    #dayCard {
+        min-width: 170px !important;
+    }
+
+    #dayCard p {
+        margin-inline: 10px !important;
+    }
+}
+
+@media (max-width: 357px) {
+
+    #temp p {
+        font-size: 30px !important;
+        margin-top: 0px !important;
+        margin-inline: 0px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    #hourly img {
+        width: 170px;
+    }
+}
+
+#shortVer {
+    display: block;
+}
+
+#week {
+    font-family: 'Nunito-ExtraBold';
+}
+
+/* Min/Max temperature style */
+
+#temp .maxTemp {
+    color: rgb(255, 162, 162);
+    font-family: "Nunito-ExtraBold";
+}
+
+#temp .minTemp {
+    color: rgb(79, 199, 255);
+}
+
+@media (max-width: 576px) {
+    #bottomText {
+        font-size: 18px !important;
+        margin-bottom: 5px !important;
+    }
+
+    #bottomMoonText {
+        margin: auto;
+        font-size: 10px !important;
+    }
+}
+
+#worldLine:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    border-radius: 10px;
+}

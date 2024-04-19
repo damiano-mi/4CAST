@@ -1,0 +1,44 @@
+#rightSide {
+    display: block !important;
+    font-size: 25px;
+}
+
+@media (min-width: 577px) {
+    #main {
+        width: 800px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #displayedData {
+        display: inline;
+    }
+
+    #displayedData img {
+        max-width: 200px;
+    }
+
+    #rightSide {
+        margin-bottom: 15px;
+    }
+
+    #rightSide div,
+    #rightSide p {
+        display: inline !important;
+        margin: 5px;
+    }
+
+    #tempSide p {
+        display: inline !important;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    #rightSide div,
+    #rightSide p {
+        margin: 4px;
+        font-size: 21px;
+    }
+}
